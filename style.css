@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+  /* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+  
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(218, 28%, 13%);
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-weight: 400, 700;
+    color: hsl(0, 0%, 100%);
+
+}
+  h1, h2, h3, h4, h5, h6 {
+
+    font-family: 'Raleway', sans-serif;
+    
+    line-height:1.7;
+    
+    font-weight:400, 700;
+    
+    
+    }
+
+    p {
+
+        font-family: 'Open Sans', Sans-serif;
+        
+        font-weight: 400, 700;
+        
+        font-size: 14px;
+        
+        }
+  
+  .header {
+    background-color: hsl(217, 28%, 15%);
+    font-family: 'Raleway', sans-serif;
+    padding: 15px;
+  }
+
+ /* nav ul li {
+    padding: 40px 20px;
+    list-style-type: none;
+    
+}
+
+nav ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+}*/
+  
+  /*.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .menu li:hover {
+    background-color: #0099cc;
+  }*/
+.alt1 {
+    background-color: hsl(217, 28%, 15%);
+}
+.intro_tab {
+
+    background-color: hsl(217, 28%, 15%);
+    color: white;
+    text-align: center;
+}
+
+.illust_pic {
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.info_given1 {
+    text-align: center;
+    padding: left 5% right 5%;
+    font-size: 2.0rem;
+}
+
+.info_given2 {
+    text-align: center;
+    padding:inherit;
+    padding-bottom: 2%;
+    font-size: 14px;
+}
+
+  .button { 
+      flex: center;
+    background-color:hsl(198, 60%, 50%); /* Shade of Blue */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 300px;
+    
+  }
+
+  /*SECTION 2 STYLES GO HERE*/
+
+  .top-features {
+    
+    justify-content: center;
+    
+    align-items: center;
+    
+    }
+    
+    .section {
+    
+    width: 50%;
+    
+    padding: 2rem 2.5rem;
+    
+    text-align: center;}
+    
+    .mt-hp {
+    
+    margin-top: 2rem;
+    
+    }
+    
+    .attribution { 
+    
+    font-size: 11px; 
+    
+    text-align: center; 
+    
+    }    
+    
+    .attribution a { 
+    
+    color: hsl(228, 45%, 44%); 
+    
+    }
+
+
+
+    /*SECTION 4 CODE GOES HERE*/
+    .section3{
+        position: relative;
+        background-color: hsl(218, 28%, 13%);
+    }
+    .section3-content{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+    .image-container{
+        position: relative;
+        display: flex;
+        margin: 40px;
+        padding: 20px;
+    }
+    .description-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 10px;
+    }
+    .description-title{
+        position: relative;
+        font-size:3rem ;
+        width: 100%;
+        margin: 10px 0px;
+        padding: 10px 0px 10px 0px;
+    }
+    .description-content{
+        display:flex;
+        flex-direction: column;
+        font-size: 1.2rem;
+    }
+    p{
+        margin-top: 10px;
+        padding: 6px;
+    }
+    .description-link{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+    .link{
+        text-decoration: none;
+        padding-bottom: 3px;
+    }
+    .arrow{
+        position: relative;
+        max-width: 3%;
+        margin:0px 0px 0px 7px;
+    }
+    @media screen and (max-width: 520px){
+        .section3-content{
+            display: flex;
+            flex-direction: column;
+        }
+        .anime{
+            width: 100%;
+        }
+        .description-title{
+            font-size: 2.4rem;
+        }
+        .description-content{
+            font-size: 1.1rem;
+        }
+    }
+
+    /*SECTION 4 STYLE STARTS HERE*/
+    
+    .columns {
+        align-items: center;
+        }
+      
+      .column {
+        border: 2px none;
+        margin: 2em;
+        text-align: center;
+        background-color: hsl(219, 30%, 18%);
+        padding: 2em;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        border-radius: 1em;
+        height: auto;
+        width: 25%;
+      }
+      
+      @media screen and (max-width: 550px) {
+        .columns {
+          grid-template-columns: auto;
+        }
+      }
+
+  
